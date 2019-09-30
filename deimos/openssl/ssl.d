@@ -1716,9 +1716,7 @@ auto DTLSv1_listen(SSL* ssl, void* peer) {
 auto SSL_session_reused(SSL* ssl) {
     return SSL_ctrl(ssl,SSL_CTRL_GET_SESSION_REUSED,0,null);
 }
-auto SSL_session_reused(SSL* ssl) {
-    return SSL_ctrl(ssl,SSL_CTRL_GET_SESSION_REUSED,0,null);
-}
+
 auto SSL_num_renegotiations(SSL* ssl) {
     return SSL_ctrl(ssl,SSL_CTRL_GET_NUM_RENEGOTIATIONS,0,null);
 }
