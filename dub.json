@@ -13,6 +13,7 @@
 		"ssl",
 		"crypto"
 	],
+	"lflags-osx" : ["-L/opt/local/lib/"],
 	"configurations": [
 		{
 			"name": "library",
