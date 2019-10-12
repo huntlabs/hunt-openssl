@@ -9,11 +9,12 @@
 	"sourcePaths": [
 		"."
 	],
+	"lflags-osx" : ["-L/opt/local/lib/"],
 	"libs-posix": [
 		"ssl",
 		"crypto"
 	],
-	"lflags-osx" : ["-L/opt/local/lib/"],
+	"sourceFiles-windows-x86_64": [ "lib/x64/libcrypto64MD.lib", "lib/x64/libssl64MD.lib" ],
 	"configurations": [
 		{
 			"name": "library",

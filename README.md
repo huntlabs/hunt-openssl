@@ -1,7 +1,7 @@
 OpenSSL D interface
 -------------------
 
-**Notice: **
+**Notice:**
 This project is forked from [D-Programming-Deimos/openssl](http://https://github.com/D-Programming-Deimos/openssl) to give better supports for our projects.
 
 
@@ -33,3 +33,8 @@ License: The OpenSSL toolkit is under a dual license, i.e. both the conditions
 of the OpenSSL License and the original SSLeay license apply to the toolkit.
 See the OpenSSL distribution for details. These interface files are a derived
 work and do not impose any additional restrictions.
+
+
+## Build on Windows
+Download Win64 OpenSSL at [here](http://slproweb.com/products/Win32OpenSSL.html) and install it.
+The Win64 OpenSSL v1.1.0 serials is recommended.
