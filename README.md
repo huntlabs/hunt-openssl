@@ -36,5 +36,8 @@ work and do not impose any additional restrictions.
 
 
 ## Build on Windows
-Download Win64 OpenSSL at [here](http://slproweb.com/products/Win32OpenSSL.html) and install it.
-The Win64 OpenSSL v1.1.0 serials is recommended.
+1. Download Win64 OpenSSL from [here](http://slproweb.com/products/Win32OpenSSL.html).
+2. Install it to a folder. (For example: C:\OpenSSL-Win64).
+3. Replace the two libraries in lib\x64 with the latest ones (In C:\OpenSSL-Win64\lib\VC).
+
+**Note:** The Win64 OpenSSL v1.1.0 serials are recommended.
