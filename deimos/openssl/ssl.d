@@ -758,11 +758,11 @@ enum SSL_MODE_SEND_CLIENTHELLO_TIME = 0x00000020L;
 enum SSL_MODE_SEND_SERVERHELLO_TIME = 0x00000040L;
 
 
-version(OPENSSL_NO_HEARTBEATS) {} else {
-	auto SSL_get_secure_renegotiation_support(SSL* ssl) {
-        return SSL_ctrl(ssl,SSL_CTRL_TLS_EXT_SEND_HEARTBEAT,0,null);
-	}
-}
+// version(OPENSSL_NO_HEARTBEATS) {} else {
+// 	auto SSL_get_secure_renegotiation_support(SSL* ssl) {
+//         return SSL_ctrl(ssl,SSL_CTRL_TLS_EXT_SEND_HEARTBEAT,0,null);
+// 	}
+// }
 
 void SSL_CTX_set_msg_callback(SSL_CTX* ctx, ExternC!(void function(int write_p, int version_, int content_type, const(void)* buf, size_t len, SSL* ssl, void* arg)) cb);
 void SSL_set_msg_callback(SSL* ssl, ExternC!(void function(int write_p, int version_, int content_type, const(void)* buf, size_t len, SSL* ssl, void* arg)) cb);
@@ -1518,6 +1518,7 @@ enum SSL_VERIFY_NONE = 0x00;
 enum SSL_VERIFY_PEER = 0x01;
 enum SSL_VERIFY_FAIL_IF_NO_PEER_CERT = 0x02;
 enum SSL_VERIFY_CLIENT_ONCE = 0x04;
+enum SSL_VERIFY_POST_HANDSHAKE = 0x08;
 
 alias SSL_library_init OpenSSL_add_ssl_algorithms;
 alias SSL_library_init SSLeay_add_ssl_algorithms;
