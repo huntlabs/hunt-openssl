@@ -108,6 +108,21 @@ int	  i2d_ECDSA_SIG(const(ECDSA_SIG)* sig, ubyte** pp);
  */
 ECDSA_SIG* d2i_ECDSA_SIG(ECDSA_SIG** sig, const(ubyte)** pp, c_long len);
 
+/** Accessor for r and s fields of ECDSA_SIG
+ *  \param  sig  pointer to ECDSA_SIG pointer
+ *  \param  pr   pointer to BIGNUM pointer for r (may be NULL)
+ *  \param  ps   pointer to BIGNUM pointer for s (may be NULL)
+ */
+void ECDSA_SIG_get0(const ECDSA_SIG *sig, const BIGNUM **pr, const BIGNUM **ps);
+
+/** Setter for r and s fields of ECDSA_SIG
+ *  \param  sig  pointer to ECDSA_SIG pointer
+ *  \param  r    pointer to BIGNUM for r (may be NULL)
+ *  \param  s    pointer to BIGNUM for s (may be NULL)
+ */
+int ECDSA_SIG_set0(ECDSA_SIG *sig, BIGNUM *r, BIGNUM *s);
+
+
 /** Computes the ECDSA signature of the given hash value using
  * the supplied private key and returns the created signature.
  * \param  dgst      pointer to the hash value
