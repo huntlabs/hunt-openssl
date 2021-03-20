@@ -2,7 +2,7 @@ OpenSSL D interface
 -------------------
 
 **Notice:**
-This project is forked from [D-Programming-Deimos/openssl](http://https://github.com/D-Programming-Deimos/openssl) to give better supports for our projects.
+This project is forked from [D-Programming-Deimos/openssl](https://github.com/D-Programming-Deimos/openssl) to give better supports for our projects.
 
 
 From the OpenSSL website: "The OpenSSL Project is a collaborative effort to
