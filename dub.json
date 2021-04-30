@@ -15,6 +15,7 @@
 		"crypto"
 	],
 	"sourceFiles-windows-x86_64": [ "lib/x64/libcrypto64MD.lib", "lib/x64/libssl64MD.lib" ],
+	"copyFiles-windows-x86_64" : ["lib/x64/*.dll"],
 	"configurations": [
 		{
 			"name": "library",
